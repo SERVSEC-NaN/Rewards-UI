@@ -1,0 +1,47 @@
+.header {
+  background: #8fb14e;
+  display: flex;
+  max-width: 960;
+}
+
+.nav {
+  margin: 0 auto;
+
+  padding: 0 1.0875rem 1.45rem;
+}
+
+.ul {
+  display: flex;
+  flex: 1;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+.li {
+  margin: 0 1rem 0 0;
+  list-style: none;
+  font-size: 1rem;
+}
+
+button {
+  border: none;
+  background-color: inherit;
+  color: black;
+  cursor: pointer;
+  list-style: none;
+  font-size: 1rem;
+  margin: 0 1rem 0 0;
+  border-radius: 1rem;
+  padding: 0;
+}
+
+.login {
+  background-color: #8fb14e;
+  margin: 0 1rem 0 0;
+}
+
+.signup {
+  background-color: white;
+  margin: 0 1rem 0 0;
+}
