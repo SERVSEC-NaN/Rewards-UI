@@ -1,23 +1,28 @@
 import * as React from "react"
-import PropTypes from "prop-types"
-
 import * as styles from "./header.module.css"
 
 function Header({ siteTitle }) {
   return (
-    <header className={styles.header}>
-      <div className={styles.nav}>
-        <ul className={styles.ul}>
-          <li className={styles.li}>
-            {siteTitle}
-          </li>
-          <li className={styles.li}>
-            About us
-          </li>
-          <Buttons />
-        </ul>
-      </div>
+    <header>
+      <Menu siteTitle={siteTitle}/>
     </header>
+  )
+}
+
+function Menu({siteTitle}) {
+  return (
+    <nav style={{
+      width: `100%`,
+      maxWidth: `768px`,
+      margin: `auto`
+    }}>
+      <ul className={styles.ul}>
+        <li className={styles.li}>
+          {siteTitle}
+        </li>
+        <Buttons />
+      </ul>
+    </nav>
   )
 }
 
@@ -32,14 +37,6 @@ function Buttons() {
       </button>
     </>
   )
-}
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
 }
 
 export default Header

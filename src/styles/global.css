@@ -1,0 +1,23 @@
+html {
+  box-sizing: border-box;
+  background: white;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  color: black;
+  text-rendering: optimizeLegibility;
+}
+
+main {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  padding: 2rem 0 2rem 0;
+  max-width: 768px;
+  margin: auto;
+}

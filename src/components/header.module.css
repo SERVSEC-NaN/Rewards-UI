@@ -1,27 +1,22 @@
-.header {
+header {
   background: #8fb14e;
   display: flex;
-  max-width: 960;
-}
-
-.nav {
-  margin: 0 auto;
-
-  padding: 0 1.0875rem 1.45rem;
+  height: 5rem;
+  width: 100%;
 }
 
 .ul {
   display: flex;
   flex: 1;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .li {
   margin: 0 1rem 0 0;
   list-style: none;
   font-size: 1rem;
+  padding: 0.5rem;
 }
 
 button {
@@ -34,6 +29,7 @@ button {
   margin: 0 1rem 0 0;
   border-radius: 1rem;
   padding: 0;
+  padding: 0.5rem;
 }
 
 .login {
