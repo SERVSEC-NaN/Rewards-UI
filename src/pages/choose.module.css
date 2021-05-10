@@ -1,0 +1,21 @@
+.question {
+  font-size: 2.7rem;
+  margin-bottom: 50px;
+}
+
+.button {
+  font-size: 2.7rem;
+  width: 400px;
+  height: 65px;
+  background: #ffffff;
+  border: 3px solid #000000;
+  margin-bottom: 30px;
+  padding: 5px 0 5px 0;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: #ffffff;
+  background-color: #00852e;
+  border: 3px solid #00852e;
+}

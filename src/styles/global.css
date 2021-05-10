@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Open+Sans&display=swap");
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat.woff") format("woff"),
+    url("../fonts/montserrat.woff2") format("woff2");
+  font-display: swap;
+}
 
 html {
   box-sizing: border-box;
@@ -12,6 +18,7 @@ body {
   height: 100%;
   color: black;
   text-rendering: optimizeLegibility;
+  font-family: "Montserrat";
 }
 
 main {
