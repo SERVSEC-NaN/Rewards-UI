@@ -1,9 +1,13 @@
 {
   "name": "gatsby-starter-default",
-  "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "private": false,
+  "description": "Get promotions, get money",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Bijon Setyawan Raya <mathews.kyle@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SERVSEC-NaN/Rewards-UI"
+  },
   "dependencies": {
     "cross-env": "^7.0.3",
     "gatsby": "^3.4.1",
@@ -38,12 +42,5 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
   }
 }
