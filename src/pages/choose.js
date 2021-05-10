@@ -5,8 +5,8 @@ import Layout from "../components/layout"
 const Choose = () => (
     <Layout>
         <h1 className={styles.question}>Are you?</h1>
-        <button className={styles.button}>A User</button>
-        <button className={styles.button}>A Business</button>
+        <button className={styles.button}>A Subscriber</button>
+        <button className={styles.button}>A Promoter</button>
     </Layout>
 )
 
