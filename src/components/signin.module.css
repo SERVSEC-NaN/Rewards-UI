@@ -1,0 +1,13 @@
+.title {
+  font-size: 50px;
+  font-family: "Arvo";
+  color: #00852e;
+  margin: 0;
+}
+
+.description {
+  font-size: 24px;
+  font-family: "Open Sans", "Helvetica Neue";
+  color: #767676;
+  margin: 0 0 50px 0;
+}
