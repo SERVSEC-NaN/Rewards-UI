@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap");
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat.woff") format("woff"),
+    url("../fonts/montserrat.woff2") format("woff2");
+  font-display: swap;
+}
+
+html {
+  box-sizing: border-box;
+  background: white;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  color: black;
+  text-rendering: optimizeLegibility;
+  font-family: "Montserrat";
+}
+
+main {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  justify-content: center;
+  align-items: center;
+  max-width: 768px;
+  margin: auto;
+}
