@@ -1,7 +1,7 @@
-import * as React from 'react'
-import * as styles from '../styles/choose.module.css'
+import React from 'react'
+import styles from '../styles/choose.module.css'
 
-export default function Choose () {
+const Choose: React.FunctionComponent = () : JSX.Element => {
   return (
     <>
       <h1 className={styles.question}>Are you?</h1>
@@ -10,3 +10,5 @@ export default function Choose () {
     </>
   )
 }
+
+export default Choose

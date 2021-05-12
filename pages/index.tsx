@@ -1,7 +1,8 @@
+import React from 'react'
 import Link from 'next/link'
 import styles from '../styles/index.module.css'
 
-export default function Home () {
+const Home: React.FunctionComponent = () : JSX.Element => {
   return (
     <>
       <h1 className={styles.title}>REWARD$</h1>
@@ -19,3 +20,5 @@ export default function Home () {
     </>
   )
 }
+
+export default Home
