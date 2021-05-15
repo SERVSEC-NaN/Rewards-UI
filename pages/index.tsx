@@ -13,7 +13,7 @@ const Home: React.FunctionComponent = (): JSX.Element => {
       >
         REWARD$
       </h1>
-      <h3 className="text-gray mb-10">GET PROMOTIONS, GET MONEY</h3>
+      <h3 className="text-gray mb-10">Your attention is valueable to us</h3>
       <input
         className="py-3 text-center border border-gray-400 rounded shadow"
         style={{
