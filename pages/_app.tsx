@@ -1,13 +1,18 @@
 import React from 'react'
-import { AppProps } from 'next/app'
 import Layout from '../components/layout'
+
+import { AppProps } from 'next/app'
+import { ThemeProvider } from 'next-themes'
+
 import '../styles/global.css'
 
 const Rewards: React.FunctionComponent<AppProps> = ({ Component, pageProps }: AppProps): JSX.Element => {
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <ThemeProvider attribute="class">
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </ThemeProvider>
   )
 }
 

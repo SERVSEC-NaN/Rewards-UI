@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-const Layout: React.FunctionComponent = ({children}): JSX.Element => {
+const Layout: React.FunctionComponent = ({ children }): JSX.Element => {
   return (
     <main>
       {children}
