@@ -1,11 +1,11 @@
 import React from 'react'
-import Link from 'next/link'
+import Image from 'next/image'
 
-const Home: React.FunctionComponent = (): JSX.Element => {
+const Main: React.FunctionComponent = (): JSX.Element => {
   return (
     <>
       <h1
-        className="text-5xl mb-2"
+        className="text-5xl"
         style={{
           fontFamily: `Arvo`,
           color: `#00852e`
@@ -13,27 +13,21 @@ const Home: React.FunctionComponent = (): JSX.Element => {
       >
         REWARD$
       </h1>
-      <h3 className="text-gray mb-10">Your attention is valueable</h3>
-      <input
-        className="py-3 text-center border border-gray-400 rounded shadow"
-        style={{
-          width: `80%`,
-          fontFamily: `Montserrat`
-        }}
-        type='text'
-        placeholder='EMAIL OR PHONE NUMBER'
-        autoComplete='off'
-        spellCheck='false'
-      />
-      <Link href='/choose'>
-        <button
-          className="py-2 px-4 mt-5 bg-transparent hover:bg-black hover:text-white text-gray-800 font-bold border border-gray-400 rounded shadow"
-        >
-          LOGIN
-        </button>
-      </Link>
+      <p></p>
+      <div className="md:flex rounded-xl p-10 md:p-5">
+        <div className="pt-6 md:p-8 text-center md:text-left space-y-4">
+          <p className="text-md font-semibold pl-10 pr-10">
+            Your attention is valuable.
+            Earn by viewing privacy-respecting ads and pay it forward to support content creators you love.
+          </p>
+          <p className="text-gray-500 pl-10 pr-10">
+            
+          </p>
+        </div>
+        <img className="w-72 h-72 md:h-auto mx-auto" src="/icon.svg" alt="" width="500" height="500" />
+      </div>
     </>
   )
 }
 
-export default Home
+export default Main
