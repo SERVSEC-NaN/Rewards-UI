@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Authenticate: React.FunctionComponent = (): JSX.Element => {
+export function Authenticate() {
   return (
     <>
       <h1>This is the authentication page</h1>
