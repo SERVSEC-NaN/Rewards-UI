@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import styles from './userlogin.module.css'
 
 export default function UserLogin() {
   return (
@@ -29,7 +30,9 @@ export default function UserLogin() {
       />
       <Link href='/chooseusertype'>
         <button
-          className="py-2 px-4 mt-5 bg-transparent hover:bg-black hover:text-white text-gray-800 font-bold border border-gray-400 rounded shadow"
+          className={
+            styles.button + " py-2 px-4 mt-5 bg-transparent hover:bg-black hover:text-white text-gray-800 font-bold border border-gray-400 rounded shadow"
+          }
         >
           LOGIN
         </button>

@@ -6,7 +6,7 @@ export default function Admin() {
   return (
     <>
       <h1
-        className="md:text-8xl text-6xl"
+        className="md:text-8xl text-7xl"
         style={{
           fontFamily: `Arvo`,
           color: `var(--primary-color)`

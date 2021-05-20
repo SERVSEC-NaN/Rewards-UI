@@ -45,6 +45,7 @@ main {
   align-items: center;
   max-width: 768px;
   margin: auto;
+  font-size: 18px;
 }
 
 input {

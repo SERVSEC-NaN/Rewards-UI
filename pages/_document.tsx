@@ -7,10 +7,6 @@ export default class MyDocument extends Document {
         <Head>
           <meta charSet="utf-8" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-          <link
-            rel="stylesheet"
-            href={`${this.props.__NEXT_DATA__.assetPrefix}/_next/static/style.css`}
-          />
         </Head>
         <body>
           <Main />
