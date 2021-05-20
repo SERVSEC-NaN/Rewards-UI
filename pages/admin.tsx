@@ -19,10 +19,10 @@ export default function Admin() {
         Admin page
       </p>
       
-      <div className="w-full max-w-md mx-auto">
+      <div className="w-full max-w-xl mx-auto">
       <form>
         <input
-          className="mb-5 py-3 text-center border border-gray-400 rounded shadow"
+          className="w-full mb-5 py-3 text-center border border-gray-400 rounded shadow"
           style={{
             fontFamily: `Montserrat`
           }}
@@ -33,9 +33,8 @@ export default function Admin() {
         />
 
         <input
-          className="py-3 text-center border border-gray-400 rounded shadow"
+          className="w-full py-3 text-center border border-gray-400 rounded shadow"
           style={{
-            width: `80%`,
             fontFamily: `Montserrat`
           }}
           type='password'
