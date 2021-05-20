@@ -1,5 +1,10 @@
+import Layout from "../components/layout";
+
 export default function Dashboard() {
   return (
-    <h1>This is a dashboard page for admin</h1>
+    <Layout>
+      <h1>This is a dashboard page for admin</h1>
+    </Layout>
+    
   )
 }

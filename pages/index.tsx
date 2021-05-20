@@ -1,11 +1,12 @@
 import React from 'react'
 import Link from 'next/link'
+import Layout from '../components/layout'
 
 export default function Main() {
   return (
-    <>
+    <Layout>
       <h1
-        className="md:text-8xl text-7xl"
+        className="md:text-8xl text-6xl"
         style={{
           fontFamily: `Arvo`,
           color: `var(--primary-color)`
@@ -13,22 +14,23 @@ export default function Main() {
       >
         REWARD$
       </h1>
-      <div className="mt-10">
+      <div className="my-5">
         <p className="text-center text-xl md:text-2xl text-bold">
-          Your time is valuable
+          Your attention is valuable
         </p>
         <p className="text-center text-gray-500 text-base md:text-xl">
           Your time and attention will be rewarded.
         </p>
       </div>
-      <img className="w-full h-36 md:my-10 mb-10" src="/redeem-card.svg" alt="" width="500" height="500" />
+      <img className="mx-auto" src="/redeem-card.svg" alt="" width="500" height="500" />
       <Link href="/userlogin">
         <div
-          style={{ backgroundColor: `var(--primary-color)`, cursor: 'pointer' }}
-          className="text-white text-center text-xl md:text-3xl py-3 px-6 rounded-full">
+          style={{ backgroundColor: `var(--primary-color)`, cursor: 'pointer', width: `250px`}}
+          className="mt-5 text-white text-center text-xl md:text-2xl py-3 px-6 rounded-full mx-auto"
+        >
           Get Started
         </div>
       </Link>
-    </>
+    </Layout>
   )
 }

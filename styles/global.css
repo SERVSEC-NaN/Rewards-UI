@@ -37,15 +37,12 @@ body {
 }
 
 main {
-  display: flex;
   height: 100vh;
   flex-direction: column;
   -webkit-box-pack: justify;
   justify-content: center;
   align-items: center;
-  max-width: 768px;
   margin: auto;
-  font-size: 18px;
 }
 
 input {

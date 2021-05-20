@@ -1,12 +1,13 @@
 import React from 'react'
 import Link from 'next/link'
+import Layout from '../components/layout'
 import styles from './userlogin.module.css'
 
 export default function UserLogin() {
   return (
-    <>
+    <Layout>
       <h1
-        className="text-5xl mb-2"
+        className="md:text-8xl text-6xl text-center"
         style={{
           fontFamily: `Arvo`,
           color: `#00852e`
@@ -14,13 +15,12 @@ export default function UserLogin() {
       >
         REWARD$
       </h1>
-      <h3 className="text-gray mb-10">
+      <h3 className="text-gray mb-10 text-xl">
         Your attention is valueable
       </h3>
       <input
-        className="py-3 text-center border border-gray-400 rounded shadow"
+        className="w-full py-3 text-center border border-gray-400 rounded shadow"
         style={{
-          width: `80%`,
           fontFamily: `Montserrat`
         }}
         type='text'
@@ -37,6 +37,6 @@ export default function UserLogin() {
           LOGIN
         </button>
       </Link>
-    </>
+    </Layout>
   )
 }

@@ -1,11 +1,11 @@
 import * as React from 'react'
 
-const Layout: React.FunctionComponent = ({ children }): JSX.Element => {
+export default function Layout ({ children }) {
   return (
     <main>
-      {children}
+      <div className='mx-10 text-center'>
+        {children}
+      </div>
     </main>
   )
 }
-
-export default Layout
