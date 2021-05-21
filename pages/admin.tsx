@@ -22,7 +22,7 @@ export default function Admin() {
       <div className="w-full max-w-xl mx-auto">
       <form>
         <input
-          className="w-full mb-5 py-3 text-center border border-gray-400 rounded shadow"
+          className="w-full mb-5 py-3 text-center border border-gray-400 rounded shadow appearance-none leading-tight focus:outline-none focus:shadow-outline"
           type='text'
           autoComplete='off'
           spellCheck='false'
@@ -31,7 +31,7 @@ export default function Admin() {
         />
 
         <input
-          className="w-full py-3 text-center border border-gray-400 rounded shadow"
+          className="w-full py-3 text-center border border-gray-400 rounded shadow appearance-none leading-tight focus:outline-none focus:shadow-outline"
           type='password'
           autoComplete='off'
           spellCheck='false'
@@ -42,7 +42,7 @@ export default function Admin() {
         <Link href='/dashboard'>
           <button
             className={
-              styles.button + " py-2 px-4 mt-5 bg-transparent text-gray-800 font-bold border border-gray-400 rounded shadow"
+              styles.button + " py-2 px-4 mt-5 bg-transparent text-gray-800 font-bold border border-gray-400 rounded shadow focus:outline-none focus:shadow-outline"
             }
           >
             LOGIN
