@@ -19,7 +19,7 @@ export default function Admin() {
         Admin page
       </p>
       
-      <div className="w-full max-w-md mx-auto">
+      <div className="w-full max-w-xl mx-auto">
       <form>
         <input
           className="w-full mb-5 py-3 text-center border border-gray-400 rounded shadow"

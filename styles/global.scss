@@ -37,8 +37,6 @@ body {
 }
 
 main {
-  display: flex;
-  height: 100vh;
   flex-direction: column;
   -webkit-box-pack: justify;
   justify-content: center;
@@ -47,5 +45,9 @@ main {
 }
 
 input {
+  outline: none;
+}
+
+button {
   outline: none;
 }
