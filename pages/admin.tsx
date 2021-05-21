@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import styles from './admin.module.css'
+import styles from './admin.module.scss'
 import Layout from '../components/layout'
 
 export default function Admin() {
@@ -22,26 +22,21 @@ export default function Admin() {
       <div className="w-full max-w-md mx-auto">
       <form>
         <input
-          className="mb-5 py-3 text-center border border-gray-400 rounded shadow"
-          style={{
-            fontFamily: `Montserrat`
-          }}
+          className="w-full mb-5 py-3 text-center border border-gray-400 rounded shadow"
           type='text'
           autoComplete='off'
           spellCheck='false'
-          placeholder="Username"
+          placeholder='Username'
+          value='john_admin'
         />
 
         <input
-          className="py-3 text-center border border-gray-400 rounded shadow"
-          style={{
-            width: `80%`,
-            fontFamily: `Montserrat`
-          }}
+          className="w-full py-3 text-center border border-gray-400 rounded shadow"
           type='password'
           autoComplete='off'
           spellCheck='false'
-          placeholder="Password"
+          placeholder='password'
+          value='&middot;&middot;&middot;&middot;&middot;'  
         />
 
         <Link href='/dashboard'>

@@ -1,0 +1,12 @@
+.title {
+  font-family: Arvo;
+  color: #00852e;
+}
+
+.button {
+  outline: none;
+  &:hover {
+    color: #ffffff;
+    background: var(--primary-color);
+  }
+}

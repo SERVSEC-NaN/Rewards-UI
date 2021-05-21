@@ -1,0 +1,7 @@
+.option {
+  outline: none;
+  &:hover {
+    color: #ffffff;
+    background-color: var(--primary-color);
+  }
+}

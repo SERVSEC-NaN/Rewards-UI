@@ -1,0 +1,7 @@
+.button {
+  outline: none;
+  &:hover {
+    color: #ffffff;
+    background: var(--primary-color);
+  }
+}

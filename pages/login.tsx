@@ -1,18 +1,12 @@
 import React from 'react'
 import Link from 'next/link'
 import Layout from '../components/layout'
-import styles from './userlogin.module.css'
+import styles from './login.module.scss'
 
 export default function UserLogin() {
   return (
     <Layout>
-      <h1
-        className="md:text-8xl text-6xl text-center"
-        style={{
-          fontFamily: `Arvo`,
-          color: `#00852e`
-        }}
-      >
+      <h1 className={styles.title + " md:text-8xl text-6xl text-center"}>
         REWARD$
       </h1>
       <h3 className="text-gray mb-10 text-xl">
@@ -20,9 +14,6 @@ export default function UserLogin() {
       </h3>
       <input
         className="w-full py-3 text-center border border-gray-400 rounded shadow"
-        style={{
-          fontFamily: `Montserrat`
-        }}
         type='text'
         placeholder='EMAIL OR PHONE NUMBER'
         autoComplete='off'

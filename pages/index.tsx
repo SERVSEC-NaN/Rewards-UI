@@ -23,7 +23,7 @@ export default function Main() {
         </p>
       </div>
       <img className="mx-auto" src="/redeem-card.svg" alt="" width="500" height="500" />
-      <Link href="/userlogin">
+      <Link href="/login">
         <div
           style={{ backgroundColor: `var(--primary-color)`, cursor: 'pointer', width: `250px`}}
           className="mt-5 text-white text-center text-xl md:text-2xl py-3 px-6 rounded-full mx-auto"

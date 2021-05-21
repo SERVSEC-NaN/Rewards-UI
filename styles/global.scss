@@ -32,11 +32,12 @@ body {
   background: var(--color-background);
   color: black;
   text-rendering: optimizeLegibility;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   transition: background 1s ease-in-out;
 }
 
 main {
+  display: flex;
   height: 100vh;
   flex-direction: column;
   -webkit-box-pack: justify;
