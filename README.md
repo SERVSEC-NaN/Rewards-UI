@@ -13,11 +13,11 @@ After the project is run, go to `localhost:3000` in your browser. If you want to
 - [x] A layout template with navigation bar (home/login/register or home/account/logout)
 - [x] A home page
 - [x] A login page
-- [ ] An account overview page for logged in users
-- [ ] Allow users to login using the login page
+- [x] An account overview page for logged in users
+- [x] Allow users to login using the login page
 - [ ] Use a service object call to authenticate the user with your API
-- [ ] Use cookie-based sessions to store the logged in user's username and other non-sensitive account information (e.g., email) between requests
-* [ ] Allow logged in users to see their account information on an accounts page
+- [x] Use cookie-based sessions to store the logged in user's username and other non-sensitive account information (e.g., email) between requests
+* [x] Allow logged in users to see their account information on an accounts page
 * [ ] Allow users to logout by deleting account information from session data in cookie
 
 ## 2. Add flash messages for errors and notices
