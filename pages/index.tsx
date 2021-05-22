@@ -2,16 +2,10 @@ import React from 'react'
 import Link from 'next/link'
 import Layout from '../components/layout'
 
-export default function Main() {
+export default function Rewards() {
   return (
     <Layout>
-      <h1
-        className="md:text-8xl text-6xl"
-        style={{
-          fontFamily: `Arvo`,
-          color: `var(--primary-color)`
-        }}
-      >
+      <h1 className="title text-6xl md:text-8xl ">
         REWARD$
       </h1>
       <div className="my-5">
@@ -23,14 +17,34 @@ export default function Main() {
         </p>
       </div>
       <img className="mx-auto" src="/redeem-card.svg" alt="" width="500" height="500" />
-      <Link href="/userlogin">
+      <Link href="/login">
         <div
-          style={{ backgroundColor: `var(--primary-color)`, cursor: 'pointer', width: `250px`}}
-          className="mt-5 text-white text-center text-xl md:text-2xl py-3 px-6 rounded-full mx-auto"
+          className="start-button mt-10 text-white text-center text-xl md:text-2xl py-3 px-6 rounded-full mx-auto"
         >
           Get Started
         </div>
       </Link>
+
+      <style jsx>{`
+        .title {
+          font-family: Arvo;
+          color: var(--primary-color);
+        }
+
+        .start-button {
+          border: 2px solid var(--primary-color);
+          background: white;
+          cursor: pointer;
+          width: 250px;
+          color: var(--primary-color);
+          transition: background 0.3s ease-in-out;
+        }
+
+        .start-button:hover {
+          background: var(--primary-color);
+          color: white;
+        }
+      `}</style>
     </Layout>
   )
 }

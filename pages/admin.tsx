@@ -1,59 +1,47 @@
 import React from 'react'
-import Link from 'next/link'
-import styles from './admin.module.css'
 import Layout from '../components/layout'
+import {useAuth0} from '@auth0/auth0-react'
 
 export default function Admin() {
+  const { loginWithRedirect } = useAuth0();
+
   return (
     <Layout>
-      <h1
-        className="md:text-8xl text-6xl"
-        style={{
-          fontFamily: `Arvo`,
-          color: `var(--primary-color)`
-        }}
-      >
+      <h1 className="title md:text-8xl text-6xl">
         REWARD$
       </h1>
+
       <p className="text-center md:text-3xl text-2xl text-gray-500 mb-10">
         Admin page
       </p>
       
-      <div className="w-full max-w-xl mx-auto">
-      <form>
-        <input
-          className="w-full mb-5 py-3 text-center border border-gray-400 rounded shadow"
-          style={{
-            fontFamily: `Montserrat`
-          }}
-          type='text'
-          autoComplete='off'
-          spellCheck='false'
-          placeholder="Username"
-        />
+      <button
+        onClick={() => loginWithRedirect()}
+        className="login-button text-white text-center text-xl md:text-2xl py-3 px-6 rounded-full mx-auto"
+      >
+        Login
+      </button>
 
-        <input
-          className="w-full py-3 text-center border border-gray-400 rounded shadow"
-          style={{
-            fontFamily: `Montserrat`
-          }}
-          type='password'
-          autoComplete='off'
-          spellCheck='false'
-          placeholder="Password"
-        />
+      <style jsx>{`
+        .title {
+          font-family: Arvo;
+          color: var(--primary-color);
+        }
 
-        <Link href='/dashboard'>
-          <button
-            className={
-              styles.button + " py-2 px-4 mt-5 bg-transparent text-gray-800 font-bold border border-gray-400 rounded shadow"
-            }
-          >
-            LOGIN
-          </button>
-        </Link>
-        </form>
-      </div>
+        .login-button {
+          border: 2px solid var(--primary-color);
+          cursor: pointer;
+          width: 250px;
+          color: var(--primary-color);
+          transition: all 0.3s ease-in-out;
+        }
+
+        .login-button:hover {
+          background: var(--primary-color);
+          color: #ffffff;
+          outline: none;
+        }
+      `}</style>
     </Layout>
   )
 }
