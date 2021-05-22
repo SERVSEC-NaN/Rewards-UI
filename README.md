@@ -2,6 +2,13 @@
   Rewards' User Interface
 </h1>
 
+# How to run this project?
+```bash
+npm install # install node modules
+npm run dev # run the project locally
+```
+After the project is run, go to `localhost:3000` in your browser. If you want to go to the admin page, go to `localhost:3000/admin`, and it will redirect you immediately to the admin page.
+
 ## 1. Create a simple client interface application
 - [x] A layout template with navigation bar (home/login/register or home/account/logout)
 - [x] A home page

@@ -32,7 +32,7 @@ body {
   background: var(--color-background);
   color: black;
   text-rendering: optimizeLegibility;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   transition: background 1s ease-in-out;
 }
 
@@ -42,12 +42,4 @@ main {
   justify-content: center;
   align-items: center;
   margin: auto;
-}
-
-input {
-  outline: none;
-}
-
-button {
-  outline: none;
 }

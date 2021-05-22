@@ -12,7 +12,6 @@ export default function Login() {
       <h3 className="text-gray mb-10 text-xl">
         Your attention is valueable
       </h3>
-      
       <form>
         <input
           className="w-full py-3 text-center border border-gray-400 rounded shadow"
