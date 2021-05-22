@@ -1,6 +1,6 @@
 import React from 'react'
 import { AppProps } from 'next/app'
-import '../styles/global.css'
+import '../styles/global.scss'
 import { Auth0Provider } from '@auth0/auth0-react'
 
 export default function App ({ Component, pageProps }: AppProps) {
