@@ -16,7 +16,7 @@ export default function Login() {
         <input
           className="w-full py-3 text-center border border-gray-400 rounded shadow"
           type='text'
-          placeholder='EMAIL OR PHONE NUMBER'
+          placeholder='PHONE NUMBER'
           autoComplete='off'
           spellCheck='false'
         />

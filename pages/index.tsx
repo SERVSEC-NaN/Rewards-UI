@@ -37,7 +37,7 @@ export default function Rewards() {
           cursor: pointer;
           width: 250px;
           color: var(--primary-color);
-          transition: background 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
         }
 
         .start-button:hover {

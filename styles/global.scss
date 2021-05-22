@@ -33,7 +33,7 @@ body {
   color: black;
   text-rendering: optimizeLegibility;
   font-family: "Montserrat", sans-serif;
-  transition: background 1s ease-in-out;
+  // transition: background 1s ease-in-out;
 }
 
 main {
@@ -42,4 +42,12 @@ main {
   justify-content: center;
   align-items: center;
   margin: auto;
+}
+
+input:focus {
+  outline:none;
+}
+
+button:focus {
+  outline:none
 }
