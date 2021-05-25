@@ -20,3 +20,18 @@ export default function Tags() {
     </Layout>
   )
 }
+
+export async function getServerSideProps(context: any) {
+  const res = await fetch(`${DATABASE_URL}/api/v1/tag`)
+  const data = await res.json()
+
+  if (!data) {
+    return {
+      notFound: true,
+    }
+  }
+
+  return {
+    props: { data }, // will be passed to the page component as props
+  }
+}

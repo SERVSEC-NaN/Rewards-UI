@@ -7,3 +7,18 @@ export default function Promoters() {
     </Layout>
   )
 }
+
+export async function getServerSideProps(context: any) {
+  const res = await fetch(`${process.env.DATABASE_URL}/api/v1/promoter`)
+  const data = await res.json()
+
+  if (!data) {
+    return {
+      notFound: true,
+    }
+  }
+
+  return {
+    props: { data }, // will be passed to the page component as props
+  }
+}
