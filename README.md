@@ -46,13 +46,14 @@
     - [ ] Split data into multiple pages
 - [x] Subscribers login page
   - [ ] Form
-    - [ ] Subscribers
+    - [ ] Subscribers phone number
+    - [ ] Login button
 - [x] Choose user type login page
 - [ ] Business-owner dashboard
 
 # 2. API
 - [ ] Create a secure channel between front-end side and back-end server
-- [ ] Be able to receive token from data base after subscriber authentications
+- [ ] Be able to receive token from data base after authentications
 
 # 3. Security
 - [ ] Reroute admin to login page if not yet signed in for administrators
@@ -62,5 +63,5 @@
 - [ ] Reroute admin to login page if not yet signed in for business owners
 - [ ] Reroute admin to dashboard if signed in for business owners
 - [ ] Prevent non administrators to login to admin dashboard
-- [ ] Be able to do SHA256 on the token received after subscriber authentications
+- [ ] Be able to do hash tokens received after authentications
 - [ ] Store subscribers' tokens in a cache
