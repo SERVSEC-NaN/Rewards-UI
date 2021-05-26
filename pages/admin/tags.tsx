@@ -22,7 +22,7 @@ export default function Tags() {
 }
 
 export async function getServerSideProps(context: any) {
-  const res = await fetch(`${DATABASE_URL}/api/v1/tag`)
+  const res = await fetch(`${process.env.DATABASE_URL}/api/v1/tag`)
   const data = await res.json()
 
   if (!data) {

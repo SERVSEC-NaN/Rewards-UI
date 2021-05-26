@@ -1,27 +1,66 @@
-<h1 align="center"> Rewards' User Interface </h1>
+<h1 align="center"> Rewards' UI Objectives </h1>
 
-# How to run this project?
-```bash
-npm install # install node modules
-npm run dev # run the project locally
-```
-After the project is run, go to `localhost:3000` in your browser. If you want to go to the admin page, go to `localhost:3000/admin`, and it will redirect you immediately to the admin page.
+# 1. Pages
+- [x] Main page
+- [x] Administrators login page
+  - [x] Login form
+    - [x] Email input bar
+    - [x] Password input bar
+    - [x] Login button
+    - [x] Send the email and password in JSON format to API
+- [ ] Admin dashboard
+  - [ ] Promotions dashboard
+    - [ ] Show admin information  
+    - [ ] Table
+    - [ ] Edit button
+    - [ ] Select/select all button
+    - [ ] Delete button
+    - [ ] Split data into multiple pages
+  - [ ] Promoters dashboard
+    - [ ] Show admin information 
+    - [ ] Table
+    - [ ] Edit button
+    - [ ] Select/select all button
+    - [ ] Delete button
+    - [ ] Split data into multiple pages
+  - [ ] Tags dashboard
+    - [ ] Show admin information 
+    - [ ] Table
+    - [ ] Edit button
+    - [ ] Select/select all button
+    - [ ] Delete button
+    - [ ] Split data into multiple pages
+  - [ ] Subscribers dashboard
+    - [ ] Show admin information 
+    - [ ] Table
+    - [ ] Edit button
+    - [ ] Select/select all button
+    - [ ] Delete button
+    - [ ] Split data into multiple pages
+  - [ ] Subscriptions dashboard
+    - [ ] Show admin information 
+    - [ ] Table
+    - [ ] Edit button
+    - [ ] Select/select all button
+    - [ ] Delete button
+    - [ ] Split data into multiple pages
+- [x] Subscribers login page
+  - [ ] Form
+    - [ ] Subscribers
+- [x] Choose user type login page
+- [ ] Business-owner dashboard
 
-# Week 13 Secure Sessions
+# 2. API
+- [ ] Create a secure channel between front-end side and back-end server
+- [ ] Be able to receive token from data base after subscriber authentications
 
-## 1. Create a simple client interface application
-- [x] A layout template with navigation bar (home/login/register or home/account/logout)
-- [x] A home page
-- [x] A login page
-- [x] An account overview page for logged in users
-- [x] Allow users to login using the login page
-- [ ] Use a service object call to authenticate the user with your API
-- [x] Use cookie-based sessions to store the logged in user's username and other non-sensitive account information (e.g., email) between requests
-- [x] Allow logged in users to see their account information on an accounts page
-- [ ] Allow users to logout by deleting account information from session data in cookie
-
-## 2. Add flash messages for errors and notices
-- [ ] Setup the flash plugin for Roda
-- [ ] Add a flash message bar to your layout.slim – you may also render it from a separate file
-- [ ] Set appropriate class styles for :error and :notice
-- [ ] Provide flash notices for form errors and important transitions (e.g., login and unauthorized error)
+# 3. Security
+- [ ] Reroute admin to login page if not yet signed in for administrators
+- [ ] Reroute admin to dashboard if signed in for administrators
+- [ ] Reroute admin to login page if not yet signed in for subscribers
+- [ ] Reroute admin to dashboard if signed in for subscribers
+- [ ] Reroute admin to login page if not yet signed in for business owners
+- [ ] Reroute admin to dashboard if signed in for business owners
+- [ ] Prevent non administrators to login to admin dashboard
+- [ ] Be able to do SHA256 on the token received after subscriber authentications
+- [ ] Store subscribers' tokens in a cache

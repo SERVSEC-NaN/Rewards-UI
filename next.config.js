@@ -20,8 +20,4 @@ module.exports = {
       ]
     }
   ),
-  env: {
-    URL: `http://localhost:8000`,
-    DATABASE_URL: `http://127.0.0.1:9292`,
-  },
 }
