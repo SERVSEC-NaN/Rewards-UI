@@ -1,4 +1,4 @@
-import Layout from '../../components/layout'
+import Layout from '../../components/PageLayout'
 
 export default function Subscriptions() {
   return (
@@ -8,9 +8,10 @@ export default function Subscriptions() {
   )
 }
 
-export async function getServerSideProps(context: any) {
-  const res = await fetch(`${process.env.DATABASE_URL}/api/v1/subscription`)
-  const data = await res.json()
+export async function getServerSideProps () {
+  const result = await fetch(`${process.env.DATABASE_URL}/api/v1/subscriptions`)
+  const json = await result.json()
+  var data = json.data
 
   if (!data) {
     return {

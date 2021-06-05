@@ -1,10 +1,10 @@
 import React from 'react'
 import Link from 'next/link'
-import Layout from '../components/layout'
+import PageLayout from '../components/PageLayout'
 
 export default function Rewards() {
   return (
-    <Layout>
+    <PageLayout>
       <h1 className="title text-6xl md:text-8xl ">
         REWARD$
       </h1>
@@ -45,6 +45,6 @@ export default function Rewards() {
           color: white;
         }
       `}</style>
-    </Layout>
+    </PageLayout>
   )
 }

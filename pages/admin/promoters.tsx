@@ -1,24 +1,61 @@
-import Layout from '../../components/layout'
+import React, { useMemo } from 'react'
+import Table from '../../components/table'
+import DashboardLayout from '../../components/DashboardLayout'
+import DashboardNavbar from '../../components/DashboardNavbar'
 
-export default function Promoters() {
+const GetRelevantData = ({ promoters }) => {
+  var result = []
+  promoters.forEach(promoter => {
+    result.push({
+      id: promoter.attributes.id,
+      email: promoter.attributes.email,
+      name: promoter.attributes.name,
+      organization: promoter.attributes.organization
+    })
+  })
+  return result
+}
+
+export default function Promoters(props) {
+  const columns = useMemo(() => [
+    {
+      Header: 'ID',
+      accessor: 'id'
+    },
+    {
+      Header: 'EMAIL',
+      accessor: 'email'
+    },
+    {
+      Header: 'NAME',
+      accessor: 'name'
+    },
+    {
+      Header: 'ORGANIZATION',
+      accessor: 'organization',
+    },
+  ], [])
+  const promoters = useMemo(() => GetRelevantData(props), [])
   return (
-    <Layout>
-      <h1>This is Promoters page</h1>
-    </Layout>
+    <DashboardLayout>
+      <DashboardNavbar />
+      <Table columns={columns} data={promoters} />
+    </DashboardLayout>
   )
 }
 
-export async function getServerSideProps(context: any) {
-  const res = await fetch(`${process.env.DATABASE_URL}/api/v1/promoter`)
-  const data = await res.json()
+export async function getServerSideProps() {
+  const result = await fetch(`${process.env.DATABASE_URL}/api/v1/promoters`)
+  const json = await result.json()
+  const promoters = json.data
 
-  if (!data) {
+  if (!promoters) {
     return {
       notFound: true,
     }
   }
 
   return {
-    props: { data }, // will be passed to the page component as props
+    props: { promoters }, // will be passed to the page component as props
   }
 }

@@ -1,8 +1,17 @@
 import React from 'react'
 import Link from 'next/link'
-import Layout from '../components/layout'
+import Layout from '../components/PageLayout'
+import { useForm, SubmitHandler } from 'react-hook-form'
+
+type Input = {
+  email: string
+}
 
 export default function Login() {
+  // const onSubmit: SubmitHandler<Input> = data => {
+  //   sendHttp
+  // }
+
   return (
     <Layout>
       <h1 className="title md:text-8xl text-6xl text-center">
@@ -16,7 +25,7 @@ export default function Login() {
         <input
           className="w-full py-3 text-center border border-gray-400 rounded shadow"
           type='text'
-          placeholder='PHONE NUMBER'
+          placeholder='johndoe@mail.com'
           autoComplete='off'
           spellCheck='false'
         />
